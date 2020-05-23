@@ -1,0 +1,19 @@
+.banner {
+  height: 221px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  background:url('src/assets/animalAdoption.png') no-repeat center center;
+  /*position: relative;*/
+}
+
+/*.toolbar {*/
+/*  position: relative;*/
+/*}*/
+
+/*mat-toolbar {*/
+/*  !*height: 64px;*!*/
+/*  position: sticky;*/
+/*  !*z-index: 100;*!*/
+/*  !*width: 100%  !important;*!*/
+/*}*/

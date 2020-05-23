@@ -1,0 +1,44 @@
+<form class="tp-form" style="padding: 10px" (ngSubmit)="createOnSubmit()" #createAnimalForm="ngForm">
+  <mat-form-field class="tp-full-width">
+    <input matInput type="text" id="age" placeholder="Age"
+           [(ngModel)]="animal.age" name="age">
+  </mat-form-field>
+  <mat-form-field class="tp-full-width">
+    <input matInput type="text" id="gender" placeholder="Gender"
+           [(ngModel)]="animal.gender" name="gender">
+  </mat-form-field>
+  <mat-form-field class="tp-full-width">
+    <input matInput type="text" id="race" placeholder="Race"
+           [(ngModel)]="animal.race" name="race">
+  </mat-form-field>
+  <mat-form-field class="tp-full-width">
+    <input matInput type="text" id="description" placeholder="Description"
+           [(ngModel)]="animal.description" name="description">
+  </mat-form-field>
+  <mat-form-field class="tp-full-width">
+    <input matInput type="text" id="photo" placeholder="Photo"
+           [(ngModel)]="animal.photo" name="photo">
+  </mat-form-field>
+  <div class="tooltip">
+    <button mat-button type="submit"><b style="color: darkblue">Submit</b></button>
+    <span class="tooltiptext">
+      If you push the Submit button, you put this animal for adoption,
+      it will appear on the site instantly,
+      and you may be contacted soon for further informations. Thank you!
+    </span>
+  </div>
+</form>
+
+<!--  <mat-form-field class="tp-full-width">-->
+<!--    <input matInput placeholder="Email" [formControl]="emailFormControl">-->
+<!--    <mat-error *ngIf="emailFormControl.hasError('email')-->
+<!--         && !emailFormControl.hasError('required')">-->
+<!--      Please enter a valid email address-->
+<!--    </mat-error>-->
+<!--    <mat-error *ngIf="emailFormControl.hasError('required')">-->
+<!--      Email is <strong>required</strong>-->
+<!--    </mat-error>-->
+<!--  </mat-form-field>-->
+
+
+

@@ -1,0 +1,46 @@
+<div style="background-color: gray; padding: 13px;">
+  <mat-spinner *ngIf="animals.length === 0">No animals to display</mat-spinner>
+  <div *ngFor="let animal of animals" style="margin-top:10px;">
+    <mat-card *ngIf="animal.adopted === 'false'">
+      <mat-card-header>
+        <mat-card-title></mat-card-title>
+        <mat-card-subtitle></mat-card-subtitle>
+      </mat-card-header>
+      <div class="row">
+        <div class="column" style="width: 30%;">
+          <img style="width: 95%;" src="{{ animal.photo }}"/>
+        </div>
+        <div class="column">
+          <table>
+            <tr>
+              <th>Race:</th>
+              <td>{{animal.race}}</td>
+            </tr>
+            <tr>
+              <th>Gender:</th>
+              <td>{{animal.gender}}</td>
+            </tr>
+            <tr>
+              <th>Age:</th>
+              <td>{{animal.age}}</td>
+            </tr>
+            <tr>
+              <th>Description:</th>
+              <td>{{animal.description}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <mat-card-actions align="begin">
+        <div class="tooltip">
+          <button mat-button (click)="adoptAnimal(animal.id)"><b style="color: darkblue;">Adopt</b></button>
+          <span class="tooltiptext">
+          If you push the Adopt button, you initiate the adoption of this animal,
+          it will disappear from this list instantly,
+          and you'll be contacted soon for further informations. Thank you!
+          </span>
+        </div>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
